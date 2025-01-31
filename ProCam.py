@@ -25,7 +25,7 @@ last_sent_time = 0  # Track time of last message to avoid spamming
 intruder_detected_time = None  # Track time when intruder is first detected
 
 # Your WhatsApp phone number (with country code, e.g., +11234567890)
-your_phone_number = "+917044840690"
+your_phone_number = "+11234567890"  #enter your own number
 
 # Function to send WhatsApp message along with image
 def send_whatsapp_message(receiver, message, image_path):
@@ -101,7 +101,7 @@ while True:
 
             if True in matches:  # Match found (recognized face)
                 color = (0, 255, 0)  # Green for recognized face
-                label = "Anvit"
+                label = "Your name"
                 recognized_face_found = True
                 intruder_detected_time = None  # Reset the timer if recognized face
             else:  # Unknown face (intruder)
